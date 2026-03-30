@@ -70,7 +70,14 @@ Contoh sederhana:
 }
 ```
 
-## Kustomisasi
+### Cara Mendapatkan Cookies
+
+1. Login Emis Gtk / Simpatika / Siap Online
+2. Buka Inspect Element (Klik Kanan -> Pilih Inspect)
+3. Pilih Tab Network
+4. Cari File Index di Kolom Name
+5. Cari Cookie di Tab Header
+6. Sesuaikan Cookies.json dengan Cookies yang didapatkan. Jangan Lupa Simpan.
 
 - Sesuaikan fungsi `cek_absensi_terisi(tanggal, sekolah_id, cookies, headers)` agar terhubung dengan endpoint SIAP dan mengembalikan `True` jika absensi sudah ada.
 - Pastikan URL upload/save sesuai URL resmi SIAP jika berubah.
