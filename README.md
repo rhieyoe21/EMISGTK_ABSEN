@@ -1,4 +1,4 @@
-# EMISGTK_ABSEN
+# EMISGTK ABSEN OTOMATIS
 
 Skrip Python otomatisasi upload absensi untuk SIAP Online.
 
@@ -14,7 +14,7 @@ Skrip Python otomatisasi upload absensi untuk SIAP Online.
 - File konfigurasi:
   - `cookies.json`: berisi cookie login SIAP Online (format JSON) hilangkan `_example` pada nama file saat digunakan
   - `libur.txt`: daftar tanggal libur nasional, format `YYYY-MM-DD` per baris , hilangkan `_example` pada nama file saat digunakan
-  - file absensi Excel (misal `absensi-guru.xls`) yang diupload
+  - file absensi Excel (misal `absensi-guru.xls`) yang diupload. Template Excel dapat diunduh di Absensi Simpatika Unduh Format Excel Lalu Sesuaikan Kehadiran
 
 ## Instalasi
 
@@ -46,7 +46,6 @@ python main.py
 - Validasi rentang tanggal
 - Tampilkan pesan jika tanggal akhir > hari ini (otomatis disesuaikan)
 - Lewati hari akhir pekan dan libur nasional
-- Upload file tanggal per tanggal
 - Simpan data absensi ke endpoint
 
 ## Format `libur.txt`
@@ -79,8 +78,7 @@ Contoh sederhana:
 5. Cari Cookie di Tab Header
 6. Sesuaikan Cookies.json dengan Cookies yang didapatkan. Jangan Lupa Simpan.
 
-- Sesuaikan fungsi `cek_absensi_terisi(tanggal, sekolah_id, cookies, headers)` agar terhubung dengan endpoint SIAP dan mengembalikan `True` jika absensi sudah ada.
-- Pastikan URL upload/save sesuai URL resmi SIAP jika berubah.
+- Pastikan URL upload/save sesuai URL resmi SIAP jika berubah. dapat di cek di Inspect Element Seperti saat Mendapatkan Cookies
 
 ## Catatan
 
