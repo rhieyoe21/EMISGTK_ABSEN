@@ -12,8 +12,8 @@ Skrip Python otomatisasi upload absensi untuk SIAP Online.
 - Python 3.8+
 - Paket Python: `requests`
 - File konfigurasi:
-  - `cookies.json`: berisi cookie login SIAP Online (format JSON)
-  - `libur.txt`: daftar tanggal libur nasional, format `YYYY-MM-DD` per baris
+  - `cookies.json`: berisi cookie login SIAP Online (format JSON) hilangkan `_example` pada nama file saat digunakan
+  - `libur.txt`: daftar tanggal libur nasional, format `YYYY-MM-DD` per baris , hilangkan `_example` pada nama file saat digunakan
   - file absensi Excel (misal `absensi-guru.xls`) yang diupload
 
 ## Instalasi
